@@ -1,0 +1,54 @@
+Started by an SCM change
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/ims
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/akshayakhare/ims
+ > git init /var/lib/jenkins/workspace/ims # timeout=10
+Fetching upstream changes from https://github.com/akshayakhare/ims
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akshayakhare/ims +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/akshayakhare/ims # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/akshayakhare/ims # timeout=10
+Fetching upstream changes from https://github.com/akshayakhare/ims
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akshayakhare/ims +refs/pull/*:refs/remotes/origin/pr/*
+Seen branch in repository origin/database
+Seen branch in repository origin/git-hook
+Seen branch in repository origin/master
+Seen branch in repository origin/pr/1/head
+Seen branch in repository origin/pr/10/head
+Seen branch in repository origin/pr/11/head
+Seen branch in repository origin/pr/12/head
+Seen branch in repository origin/pr/12/merge
+Seen branch in repository origin/pr/13/head
+Seen branch in repository origin/pr/14/head
+Seen branch in repository origin/pr/14/merge
+Seen branch in repository origin/pr/2/head
+Seen branch in repository origin/pr/3/head
+Seen branch in repository origin/pr/4/head
+Seen branch in repository origin/pr/5/head
+Seen branch in repository origin/pr/6/head
+Seen branch in repository origin/pr/7/head
+Seen branch in repository origin/pr/8/head
+Seen branch in repository origin/pr/9/head
+Seen branch in repository origin/testing
+Seen 20 remote branches
+Checking out Revision ca56f907f42cfd17c8957dacf551d5e1f285f405 (origin/pr/14/merge)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ca56f907f42cfd17c8957dacf551d5e1f285f405
+ > git rev-list 01766556b23bcccb052c2b6af52a14f3ac08bb93 # timeout=10
+First time build. Skipping changelog.
+[ims] $ /bin/sh -xe /tmp/shiningpanda5761828606156424347.sh
++ py.test --junitxml results.xml database/test_database.py
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.5, pytest-2.9.2, py-1.4.31, pluggy-0.3.1
+rootdir: /var/lib/jenkins/workspace/ims/database, inifile: 
+collected 2 items
+
+database/test_database.py ..
+
+-------- generated xml file: /var/lib/jenkins/workspace/ims/results.xml --------
+=========================== 2 passed in 0.73 seconds ===========================
+Finished: SUCCESS

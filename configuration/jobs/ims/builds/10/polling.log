@@ -1,0 +1,61 @@
+Started on Jun 3, 2016 10:47:00 AM
+Polling SCM changes on master
+Using strategy: Default
+[poll] Last Built Revision: Revision 01766556b23bcccb052c2b6af52a14f3ac08bb93 (origin/pr/14/merge)
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repositories
+ > git config remote.origin.url https://github.com/akshayakhare/ims # timeout=10
+Fetching upstream changes from https://github.com/akshayakhare/ims
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akshayakhare/ims +refs/pull/*:refs/remotes/origin/pr/*
+Polling for changes in
+Seen branch in repository origin/database
+Seen branch in repository origin/git-hook
+Seen branch in repository origin/master
+Seen branch in repository origin/pr/1/head
+Seen branch in repository origin/pr/10/head
+Seen branch in repository origin/pr/11/head
+Seen branch in repository origin/pr/12/head
+Seen branch in repository origin/pr/12/merge
+Seen branch in repository origin/pr/13/head
+Seen branch in repository origin/pr/14/head
+Seen branch in repository origin/pr/14/merge
+Seen branch in repository origin/pr/2/head
+Seen branch in repository origin/pr/3/head
+Seen branch in repository origin/pr/4/head
+Seen branch in repository origin/pr/5/head
+Seen branch in repository origin/pr/6/head
+Seen branch in repository origin/pr/7/head
+Seen branch in repository origin/pr/8/head
+Seen branch in repository origin/pr/9/head
+Seen branch in repository origin/testing
+Seen 20 remote branches
+ > git log --full-history --no-abbrev --format=raw -M -m 01766556b23bcccb052c2b6af52a14f3ac08bb93..ca56f907f42cfd17c8957dacf551d5e1f285f405 # timeout=10
+ERROR: Failed to determine if we want to exclude ca56f907f42cfd17c8957dacf551d5e1f285f405
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Command "git log --full-history --no-abbrev --format=raw -M -m 01766556b23bcccb052c2b6af52a14f3ac08bb93..ca56f907f42cfd17c8957dacf551d5e1f285f405" returned status code 128:
+stdout: 
+stderr: fatal: Invalid revision range 01766556b23bcccb052c2b6af52a14f3ac08bb93..ca56f907f42cfd17c8957dacf551d5e1f285f405
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1719)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1695)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1691)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1321)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.showRevision(CliGitAPIImpl.java:870)
+	at hudson.plugins.git.GitSCM.isRevExcluded(GitSCM.java:1687)
+	at hudson.plugins.git.GitSCM.compareRemoteRevisionWithImpl(GitSCM.java:710)
+	at hudson.plugins.git.GitSCM.compareRemoteRevisionWith(GitSCM.java:571)
+	at hudson.scm.SCM.compareRemoteRevisionWith(SCM.java:381)
+	at hudson.scm.SCM.poll(SCM.java:398)
+	at hudson.model.AbstractProject.pollWithWorkspace(AbstractProject.java:1468)
+	at hudson.model.AbstractProject._poll(AbstractProject.java:1438)
+	at hudson.model.AbstractProject.poll(AbstractProject.java:1349)
+	at hudson.triggers.SCMTrigger$Runner.runPolling(SCMTrigger.java:528)
+	at hudson.triggers.SCMTrigger$Runner.run(SCMTrigger.java:557)
+	at hudson.util.SequentialExecutionQueue$QueueEntry.run(SequentialExecutionQueue.java:119)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Done. Took 0.33 sec
+Changes found

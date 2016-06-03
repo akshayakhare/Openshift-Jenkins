@@ -1,0 +1,34 @@
+Started on Jun 3, 2016 1:30:00 PM
+Polling SCM changes on master
+Using strategy: Default
+[poll] Last Built Revision: Revision ca56f907f42cfd17c8957dacf551d5e1f285f405 (origin/pr/14/merge)
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repositories
+ > git config remote.origin.url https://github.com/akshayakhare/ims # timeout=10
+Fetching upstream changes from https://github.com/akshayakhare/ims
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akshayakhare/ims +refs/pull/*:refs/remotes/origin/pr/*
+Polling for changes in
+Seen branch in repository origin/database
+Seen branch in repository origin/git-hook
+Seen branch in repository origin/master
+Seen branch in repository origin/pr/1/head
+Seen branch in repository origin/pr/10/head
+Seen branch in repository origin/pr/11/head
+Seen branch in repository origin/pr/12/head
+Seen branch in repository origin/pr/12/merge
+Seen branch in repository origin/pr/13/head
+Seen branch in repository origin/pr/14/head
+Seen branch in repository origin/pr/14/merge
+Seen branch in repository origin/pr/2/head
+Seen branch in repository origin/pr/3/head
+Seen branch in repository origin/pr/4/head
+Seen branch in repository origin/pr/5/head
+Seen branch in repository origin/pr/6/head
+Seen branch in repository origin/pr/7/head
+Seen branch in repository origin/pr/8/head
+Seen branch in repository origin/pr/9/head
+Seen branch in repository origin/testing
+Seen 20 remote branches
+Done. Took 0.53 sec
+No changes

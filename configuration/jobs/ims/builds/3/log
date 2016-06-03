@@ -1,0 +1,26 @@
+Started by an SCM change
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/ims
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/akshayakhare/ims
+ > git init /var/lib/jenkins/workspace/ims # timeout=10
+Fetching upstream changes from https://github.com/akshayakhare/ims
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akshayakhare/ims +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/akshayakhare/ims # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/akshayakhare/ims # timeout=10
+Fetching upstream changes from https://github.com/akshayakhare/ims
+ > git -c core.askpass=true fetch --tags --progress https://github.com/akshayakhare/ims +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/database
+Seen branch in repository origin/git-hook
+Seen branch in repository origin/master
+Seen branch in repository origin/testing
+Seen 4 remote branches
+Checking out Revision 89e38dbaf619de1d9de3b81cc83afd6386d6e0af (origin/git-hook)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 89e38dbaf619de1d9de3b81cc83afd6386d6e0af
+First time build. Skipping changelog.
+Finished: SUCCESS
